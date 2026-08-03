@@ -1,5 +1,3 @@
 # 検索エンジンにインデックスさせない（Googleサイト時と同じ方針）
 User-agent: *
-
-# Disallow: /
 Allow: /
