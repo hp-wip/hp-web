@@ -1,3 +1,1 @@
-# AdMob 管理画面で発行された app-ads.txt の内容に置き換えてください。
-# 例:
-# google.com, pub-xxxxxxxxxxxxxxxx, DIRECT, f08c47fec0942fa0
+google.com, pub-5642401890088938, DIRECT, f08c47fec0942fa0
