@@ -1,0 +1,156 @@
+:root {
+  --color-bg: #ffffff;
+  --color-surface: #f2f2f2;
+  --color-text: #212121;
+  --color-heading: #226e93;
+  --color-accent: #1e6c93;
+  --color-link: #006580;
+  --color-header-bg: #212121;
+  --font-sans: "Lato", sans-serif;
+  --content-max: 720px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.67;
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+a {
+  color: var(--color-link);
+}
+
+a:hover {
+  color: #007a93;
+}
+
+.site-header {
+  background: var(--color-header-bg);
+  color: #fff;
+}
+
+.site-header__inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+}
+
+.site-logo {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 0.04em;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 280px;
+  padding: 3rem 1.5rem;
+  background-color: var(--color-accent);
+  background-image: linear-gradient(rgba(33, 33, 33, 0.4), rgba(33, 33, 33, 0.4)),
+    url("https://ssl.gstatic.com/atari/images/simple-header-blended-small.png");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(1.75rem, 5vw, 3.5rem);
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  line-height: 1.15;
+}
+
+.content {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 0;
+}
+
+.content h2 {
+  margin: 0 0 1rem;
+  color: var(--color-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.content h3 {
+  margin: 1.5rem 0 0.75rem;
+  color: var(--color-text);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.content p {
+  margin: 0 0 1rem;
+}
+
+.legal-list {
+  margin: 0;
+}
+
+.legal-list > div {
+  display: grid;
+  grid-template-columns: 8em 1fr;
+  gap: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.38;
+}
+
+.legal-list dt {
+  margin: 0;
+  font-weight: 700;
+}
+
+.legal-list dt::after {
+  content: "：";
+}
+
+.legal-list dd {
+  margin: 0;
+}
+
+.site-footer {
+  margin-top: 3rem;
+  padding: 1.5rem;
+  background: var(--color-surface);
+  text-align: center;
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+@media (max-width: 479px) {
+  .legal-list > div {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+  }
+
+  .hero {
+    min-height: 220px;
+    padding: 2rem 1rem;
+  }
+}
